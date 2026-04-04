@@ -23,5 +23,5 @@ PATH_RELS = f"datasets/{DATASET}/relations.txt"
 EMB_METHOD = None
 USE_PATHS = True
 
-TRANSFORM_MODEL = "all-distilroberta-v1"
+TRANSFORM_MODEL = "models/all-distilroberta-v1"
 TRANSFORM_DIMS = 768
