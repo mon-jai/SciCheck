@@ -143,7 +143,10 @@ def _trim_features(path, keep, new_file=None):
     aux_handle = open(aux_path, "a")
 
     with open(path, "r") as f:
-        for line in f:
+        for index, line in enumerate(f):
+            if index == 0:
+                continue
+
             spl = line.strip().split(";")
             filt = [x for i, x in enumerate(spl) if keep[i]]
             aux_handle.write(";".join(filt) + "\n")
