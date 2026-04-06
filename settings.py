@@ -1,7 +1,7 @@
 from multiprocessing import cpu_count
 import sys
 
-N_THREADS = cpu_count() 
+N_THREADS = cpu_count() - 4
 DIRECTIONAL_GRAPH = False
 
 try:
