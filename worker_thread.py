@@ -91,7 +91,7 @@ def worker(nproc, emb_dict):
 
     transform_model = None
     if settings.TRANSFORM_MODEL:
-        transform_model = SentenceTransformer(settings.TRANSFORM_MODEL, device="cpu")
+        transform_model = SentenceTransformer(settings.TRANSFORM_MODEL, device="cuda")
 
     t1 = time.thread_time()
 
