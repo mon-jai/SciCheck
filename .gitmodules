@@ -1,3 +1,0 @@
-[submodule "models/all-distilroberta-v1"]
-	path = models/all-distilroberta-v1
-	url = https://huggingface.co/sentence-transformers/all-distilroberta-v1

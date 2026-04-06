@@ -1,7 +1,7 @@
 from multiprocessing import cpu_count
 import sys
 
-N_THREADS = cpu_count() 
+N_THREADS = cpu_count() - 4
 DIRECTIONAL_GRAPH = False
 
 try:
@@ -23,5 +23,5 @@ PATH_RELS = f"datasets/{DATASET}/relations.txt"
 EMB_METHOD = None
 USE_PATHS = True
 
-TRANSFORM_MODEL = "models/all-distilroberta-v1"
+TRANSFORM_MODEL = "all-distilroberta-v1"
 TRANSFORM_DIMS = 768
